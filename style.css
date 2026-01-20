@@ -1,1 +1,89 @@
+header{
+    display:flex;
+    justify-content: end;
+    position: relative;
+    top: auto;
+}
 
+header h1{
+    font-size: 40px;
+}
+
+header p{
+    font-size: 20px;
+}
+.container-nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    overflow-y: auto;
+    background-color: aqua;
+}
+
+.content {
+    margin-left: 250px;
+}
+
+ul{
+    list-style: none;
+    background-color: blue;
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+
+li a{
+    display: block;
+    color: blue;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* N: Para que cambie al pasar el mouse */
+li a:hover{
+    color: aliceblue;
+    background-color: black;
+    
+}
+
+.front-page {
+    background-color: blueviolet;
+}
+
+.container{
+    background-color: brown;
+}
+
+.info {
+    background-color: cadetblue;
+}
+
+.inf-card{
+    background-color: chartreuse;
+}
+
+.f-card{
+    background-color: chocolate;
+}
+
+.m-inf{
+    background-color: cornflowerblue;
+}
+
+.c-card{
+    background-color: darkcyan;
+}
+
+.help{
+    background-color: deeppink;
+}
+
+.help-inf{
+    background-color: darksalmon;
+}
+
+footer{
+    background-color: gold;
+}
