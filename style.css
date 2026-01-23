@@ -67,10 +67,6 @@ li a:hover{
     
 }
 
-.cont-1 {
-    background-color: black;
-}
-
 .front-page {
     
     background-color: blueviolet;
@@ -81,10 +77,6 @@ li a:hover{
     width: 1fr;
     background: linear-gradient(to bottom, rgb(141, 169, 255), transparent);
     z-index: 1;
-}
-
-.title-txt{
-
 }
 
 .title-txt img{
@@ -112,20 +104,75 @@ li a:hover{
     font-size: 50px;
 }
 
+.todo {
+    margin: 100px 120px;
+}
+
 .container{
     background-color: brown;
 }
 
 .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     background-color: cadetblue;
 }
 
 .inf-card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px red;
     background-color: chartreuse;
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s ease;
 }
 
-.f-card{
+.inf-card:hover {
+    transform: translateY(-5px);
+}
+
+.inf-card img{
+    /* N-IMP: CENTRAR */
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    padding: 0px 15px;
+}
+
+details{
+    padding: 12px 18px;
+}
+
+
+.c-card{
     background-color: chocolate;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px red;
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.c-card:hover {
+    transform: translateY(-5px);
+}
+
+.m-inf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: cadetblue;
 }
 
 .m-inf{
