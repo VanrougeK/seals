@@ -1,9 +1,32 @@
-/* h1{
-    font-family: "LINE Seed JP", sans-serif;
-} */
+body {
+    background-color: #CBDCEB;
+}
 
-h1, h2, h3, h4, h5, h6{
+h1{
     font-family: "LINE Seed JP", sans-serif;
+}
+
+h2, h3, h4, h5, h6, details{
+    color: #5e84b2;
+    text-align: center;
+    font-family: "Jua", sans-serif;
+}
+
+h2 { font-size: 40px; }
+h3 { font-size: 30px; }
+h4 { font-size: 25px; }
+h5 { font-size: 30px; }
+h6 { font-size: 26px; }
+
+p, li a {
+    font-family: "Jua", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #6D94C5;
+}
+
+label {
+    font-size: 30px;
 }
 
 header{
@@ -11,6 +34,7 @@ header{
     justify-content: end;
     position: relative;
     top: auto;
+    background-color: #F5EFE6;
 }
 
 header h1{
@@ -29,7 +53,7 @@ header p{
     width: 250px;
     overflow-y: auto;
     z-index: 999;
-    background-color: aqua;
+    background-color: #E8DFCA;
 }
 
 #nav-open {
@@ -44,15 +68,17 @@ header p{
     position: fixed;
     top: 20px;
     left: 20px;
-    background-color: red;
+    background-color: #E8DFCA;
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
     z-index: 1000;
-    color: blue;
+    color: #6D94C5;
 }
 
 .nav-principal ul{
+    display: flex;
+    align-content: center;
     list-style: none;
     background-color: blue;
     width: 150px;
@@ -62,28 +88,30 @@ header p{
 
 .nav-principal li a{
     display: block;
-    color: blue;
+    color: #5e84b2;
     margin: 20px;
     padding: 20px;
     font-size: 20px;
+    text-decoration: none;
 }
 
 /* N: Para que cambie al pasar el mouse */
 .nav-principal li a:hover{
-    color: aliceblue;
-    background-color: black;
+    border-radius: 25px;
+    color: #E8DFCA;
+    background-color: #6D94C5;
     
 }
 
 .front-page {
-    
-    background-color: blueviolet;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
     flex-grow: 1;
     min-height: 100vh;
     bottom: 0;
     top: 0;
     width: 1fr;
-    background: linear-gradient(to bottom, rgb(141, 169, 255), transparent);
     z-index: 1;
 }
 
@@ -100,7 +128,6 @@ header p{
     justify-self: end;
     width: 80vh;
     height: 100vh;
-    background-color: coral;
 }
 
 .title-txt h1{
@@ -116,17 +143,12 @@ header p{
     margin: 100px 120px;
 }
 
-.container{
-    background-color: brown;
-}
-
 .info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    background-color: cadetblue;
 }
 
 .inf-card{
@@ -134,8 +156,8 @@ header p{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 4px 15px red;
-    background-color: chartreuse;
+    box-shadow: 0 4px 15px #6D94C5;
+    background-color: #CBDCEB;
     overflow: hidden;
     width: 350px;
     transition: transform 0.3s ease;
@@ -159,19 +181,28 @@ details{
 
 
 .c-card{
-    background-color: chocolate;
     text-align: center;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 4px 15px red;
+    box-shadow: 0 4px 15px #6D94C5;
     overflow: hidden;
     width: 350px;
     transition: transform 0.3s ease;
+    padding: 0px 15px;
+    
 }
 
 .c-card:hover {
     transform: translateY(-5px);
+}
+
+.c-card img {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    padding: 0px 15px;
+
 }
 
 .m-inf {
@@ -180,28 +211,16 @@ details{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    background-color: cadetblue;
 }
 
-.m-inf{
-    background-color: cornflowerblue;
-}
-
-.c-card{
-    background-color: darkcyan;
-}
-
-.help{
-    background-color: deeppink;
-}
-
-.help-inf{
-    background-color: darksalmon;
+.help li {
+    font-family: "Jua", sans-serif;
+    font-size: 22px;
+    color: #628abb;
 }
 
 footer{
     display: flex;
     justify-content: end;
     margin-right: 50px;
-    background-color: gold;
 }
