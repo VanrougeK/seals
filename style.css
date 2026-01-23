@@ -6,7 +6,7 @@ h1{
     font-family: "LINE Seed JP", sans-serif;
 }
 
-h2, h3, h4, h5, h6, details{
+h2, h3, h4, h5, h6, details {
     color: #5e84b2;
     text-align: center;
     font-family: "Jua", sans-serif;
@@ -21,7 +21,6 @@ h6 { font-size: 26px; }
 p, li a {
     font-family: "Jua", sans-serif;
     font-size: 24px;
-    text-align: justify;
     color: #6D94C5;
 }
 
@@ -31,7 +30,7 @@ label {
 
 header{
     display:flex;
-    justify-content: end;
+    justify-content: center;
     position: relative;
     top: auto;
     background-color: #F5EFE6;
@@ -44,8 +43,12 @@ header h1{
 header p{
     font-size: 30px;
 }
+
 .container-nav{
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: left 0.5s ease;
     top: 0;
     bottom: 0;
@@ -90,7 +93,7 @@ header p{
     color: #5e84b2;
     margin: 20px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -106,36 +109,39 @@ header p{
     /* display: flex;
     justify-content: center;
     align-content: center; */
+    text-align: center;
     flex-grow: 1;
     min-height: 100vh;
-    bottom: 0;
-    top: 0;
     width: 1fr;
     z-index: 1;
 }
 
-.title-txt img{
+/* .title-txt img{
     width: 800px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
     flex-direction: column;
-}
+} */
 
 .title-txt {
-    align-content: center;
-    justify-self: end;
     width: 80vh;
     height: 100vh;
 }
 
 .title-txt h1{
+    text-align: center;
     font-size: 100px;
 }
 
 .title-txt p{
+    text-align: center;
     line-height: 0px;
     font-size: 50px;
+}
+
+.t-s {
+    text-align: center;
 }
 
 .todo {
@@ -168,10 +174,14 @@ header p{
 
 .inf-card img{
     /* N-IMP: CENTRAR */
+    display: flex;
+    justify-content: center;
+    align-self: center;
     width: 250px;
     height: 300px;
     object-fit: cover;
     padding: 0px 15px;
+    border-radius: 40px;
 }
 
 details{
@@ -198,6 +208,9 @@ details{
 }
 
 .c-card img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     width: 250px;
     height: 300px;
     object-fit: contain;
@@ -219,7 +232,7 @@ details{
     color: #628abb;
 }
 
-.container-h li p{
+.container-h ul{
     font-family: "Jua", sans-serif;
     font-size: 24px;
     text-align: justify;
@@ -227,7 +240,17 @@ details{
 }
 
 footer{
+    font-family: "Jua", sans-serif;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
+    margin-right: 100px;
+    font-size: 20px;
+    padding-bottom: 90px;
+    color: #628abb;
+    text-decoration: underline;
+}
+
+mark{
+    background-color: #628abb;
+    color: #CBDCEB;
 }
