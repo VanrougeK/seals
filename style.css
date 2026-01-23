@@ -14,15 +14,34 @@ header p{
 }
 .container-nav{
     position: fixed;
+    transition: left 0.5s ease;
     top: 0;
     bottom: 0;
+    left: -250px;
     width: 250px;
     overflow-y: auto;
+    z-index: 999;
     background-color: aqua;
 }
 
-.content {
-    margin-left: 250px;
+#nav-open {
+    display: none;
+}
+
+#nav-open:checked ~ .container-nav{
+    left: 0;
+}
+
+.icon-nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    color: blue;
 }
 
 ul{
@@ -48,6 +67,10 @@ li a:hover{
     
 }
 
+.cont-1 {
+    background-color: black;
+}
+
 .front-page {
     
     background-color: blueviolet;
@@ -58,6 +81,18 @@ li a:hover{
     width: 1fr;
     background: linear-gradient(to bottom, rgb(141, 169, 255), transparent);
     z-index: 1;
+}
+
+.title-txt{
+
+}
+
+.title-txt img{
+    width: 800px;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-direction: column;
 }
 
 .title-txt {
