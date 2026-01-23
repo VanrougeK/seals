@@ -116,6 +116,11 @@ header p{
     z-index: 1;
 }
 
+.front-page img{
+    max-width: 100%;
+    height: auto;
+}
+
 /* .title-txt img{
     width: 800px;
     display: flex;
@@ -164,7 +169,7 @@ header p{
     box-shadow: 0 4px 15px #6D94C5;
     background-color: #CBDCEB;
     overflow: hidden;
-    width: 350px;
+    width: 250px;
     transition: transform 0.3s ease;
 }
 
@@ -177,8 +182,8 @@ header p{
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     padding: 0px 10px;
     border-radius: 40px;
@@ -211,8 +216,8 @@ details{
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     padding: 0px 15px;
 
