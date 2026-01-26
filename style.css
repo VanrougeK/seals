@@ -106,9 +106,6 @@ header p{
 }
 
 .front-page {
-    /* display: flex;
-    justify-content: center;
-    align-content: center; */
     text-align: center;
     flex-grow: 1;
     min-height: 100vh;
@@ -120,14 +117,6 @@ header p{
     max-width: 100%;
     height: auto;
 }
-
-/* .title-txt img{
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-} */
 
 .title-txt {
     width: 80vh;
@@ -178,7 +167,6 @@ header p{
 }
 
 .inf-card img{
-    /* N-IMP: CENTRAR */
     display: flex;
     justify-content: center;
     align-self: center;
